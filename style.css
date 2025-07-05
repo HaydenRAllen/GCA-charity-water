@@ -39,7 +39,7 @@ Fonts:
   justify-content: flex-start; /* Align items to the left */
   align-items: center;
   background-color: white;
-  padding: 1rem 4rem 1rem 4rem; /* Increase left and right padding to move everything right */
+  padding: 1rem 4rem 1rem 0; /* Increase left and right padding to move everything right */
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   position: sticky;
   top: 0;
