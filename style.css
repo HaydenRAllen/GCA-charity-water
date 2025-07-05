@@ -23,8 +23,10 @@ Fonts:
   This CSS uses the provided color palette and beginner-friendly styles.
 */
 
-/* Set up the main font and background color for the whole page */
-body {
+/* Set up the main font and background color
+ for the whole page */
+
+ body {
   margin: 0;
   font-family: 'Proxima Nova', sans-serif;
   background-color: #ffffff;
