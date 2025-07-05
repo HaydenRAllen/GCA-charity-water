@@ -35,21 +35,21 @@ Fonts:
 
 .navbar {
   display: flex;
-  justify-content: flex-start; /* Align items to the left */
+  justify-content: space-between;
   align-items: center;
   background-color: white;
-  padding: 1rem 4rem 1rem 4rem; /* Increase left and right padding to move everything right */
+  padding: 1rem 4rem;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   position: sticky;
   top: 0;
   z-index: 1000;
-  gap: 1.5rem; /* Slightly more space between logo and nav items */
+  gap: 1.5rem;
 }
 
 .navbar-logo {
   height: 48px;
   width: auto;
-  margin-left: 1.5rem; /* Move logo to the right */
+  margin-left: 0; /* Move logo to the right */
   margin-right: 1rem; /* Space after the logo */
 }
 
@@ -99,6 +99,7 @@ Fonts:
 .nav-container {
   display: flex;
   gap: 2rem;
+  flex: 1;
 }
 
 .hero-image {
@@ -110,7 +111,7 @@ Fonts:
 
 .hero-headline {
   position: absolute;
-  top: 150px; /* Move the headline further down */
+  top: 100px; /* Move the headline further down */
   left: 40px; /* Shift headline to the left */
   width: auto;
   text-align: left; /* Align text to the left */
@@ -129,7 +130,7 @@ Fonts:
   color: #FFF7E1;
   font-size: 1.2rem;
   font-weight: 400;
-  margin-top: 1rem; /* Space between headline and subheadline */
+  margin-top: 1.5rem; /* Space between headline and subheadline */
   text-shadow: 1px 1px 8px rgba(0,0,0,0.25); /* Make text readable on photo */
 }
 
@@ -159,6 +160,20 @@ Fonts:
 
 .cta-button:hover {
   background-color: #e6b800; /* Slightly darker yellow on hover */
+}
+
+.contact-link {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 600;
+  color: #1A1A1A;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+  margin-left: 2rem;
+}
+
+.contact-link:hover {
+  color: #FFC907; /* charity: water blue on hover */
 }
 
 /* Responsive styles for smaller screens */
