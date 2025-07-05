@@ -169,6 +169,11 @@ Fonts:
     align-items: flex-start;
     padding: 1rem;
   }
+  .navbar-logo {
+    height: 36px;
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+  }
   .nav-container {
     flex-direction: column;
     gap: 0.5rem;
@@ -177,16 +182,52 @@ Fonts:
   .nav-item {
     margin: 0.5rem 0;
   }
+  .hero-headline {
+    position: static;
+    font-size: 1.5rem;
+    color: #222;
+    text-shadow: none;
+    padding: 1rem;
+    background: rgba(255,255,255,0.85);
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .hero-subheadline {
+    font-size: 1rem;
+    color: #333;
+    text-shadow: none;
+    background: rgba(255,255,255,0.7);
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+  }
+  .cta-container {
+    position: static;
+    left: auto;
+    top: auto;
+    margin: 1rem 0;
+    text-align: center;
+  }
 }
 
 @media (max-width: 480px) {
   .navbar {
     padding: 0.5rem;
   }
+  .navbar-logo {
+    height: 28px;
+  }
   .nav-container {
     gap: 0.25rem;
   }
   .nav-item span {
     font-size: 1rem;
+  }
+  .hero-headline {
+    font-size: 1.1rem;
+    padding: 0.5rem;
+  }
+  .cta-button {
+    font-size: 1rem;
+    padding: 0.7rem 1.5rem;
   }
 }
