@@ -1,190 +1,62 @@
-/* charity: water Brand Colors & Fonts
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Water Action Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Proxima+Nova:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Link to the main CSS file -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <!-- Add the logo to the left side of the navigation bar -->
+    <img src="img/cw_logo.png" alt="Charity: Water Logo" style="height: 48px;" class="navbar-logo">
+    <div class="nav-container">
+      <!-- The navigation items are inside nav-container, which is styled to be horizontal using flexbox in CSS -->
+      <div class="nav-item">
+        <span>Take Action <span class="arrow">▼</span></span>
+        <div class="dropdown">
+          <a href="#">Volunteer</a>
+          <a href="#">Donate</a>
+          <a href="#">Advocate</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <span>About Us <span class="arrow">▼</span></span>
+        <div class="dropdown">
+          <a href="#">Our Team</a>
+          <a href="#">Mission</a>
+          <a href="#">History</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <span>Why Water? <span class="arrow">▼</span></span>
+        <div class="dropdown">
+          <a href="#">The Crisis</a>
+          <a href="#">Our Impact</a>
+          <a href="#">Success Stories</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Headline over the photo -->
+  <div class="hero-headline">
+    90% of the population has<br>
+    access to clean water.<br>
+    We're the generation<br>
+    that can reach 100%
+    <!-- Subheadline below the headline -->
+    <div class="hero-subheadline">
+      The path to clean water for everyone is nearly paved.
+    </div>
+  </div>
+  <!-- Add the main charity: water photo below the navigation bar -->
+  <img src="img/charitywaterphoto.png" alt="Charity: Water" class="hero-image">
+  <!-- Call to Action Button below the subheadline and above the bottom of the image -->
+  <div class="cta-container">
+    <button class="cta-button">Help Finish the Path</button>
+  </div>
 
-Primary Colors:
-- Yellow:     #FFC907
-- Blue:       #2E9DF7
-
-Secondary Colors:
-- Light Blue: #8BD1CB
-- Green:      #4FCB53
-- Orange:     #FF902A
-- Red:        #F5402C
-- Dark Green: #159A48
-- Pink:       #F16061
-
-Fonts:
-- Proxima Nova
-- Avenir
-
-*/
-
-/* 
-  Charity: Water Landing Page Styles
-  This CSS uses the provided color palette and beginner-friendly styles.
-*/
-
-/* Set up the main font and background color for the whole page */
-body {
-  margin: 0;
-  font-family: 'Proxima Nova', sans-serif;
-  background-color: #ffffff;
-  color: #1A1A1A;
-  position: relative;
-}
-
-.navbar {
-  display: flex;
-  justify-content: flex-start; /* Align items to the left */
-  align-items: center;
-  background-color: white;
-  padding: 1rem 4rem 1rem 4rem; /* Increase left and right padding to move everything right */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  gap: 1.5rem; /* Slightly more space between logo and nav items */
-}
-
-.navbar-logo {
-  height: 48px;
-  width: auto;
-  margin-left: 1.5rem; /* Move logo to the right */
-  margin-right: 1rem; /* Space after the logo */
-}
-
-.nav-item {
-  position: relative;
-  margin: 0 1rem;
-  cursor: pointer;
-}
-
-.nav-item span {
-  font-weight: 600;
-  /* Make the dropdown arrow smaller using a span for the arrow */
-}
-
-/* Make only the arrow smaller by wrapping it in a span with a class */
-.arrow {
-  font-size: 0.7em; /* Make the arrow smaller than the text */
-  margin-left: 2px;
-}
-
-.dropdown {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: white;
-  min-width: 150px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  padding: 0.5rem 0;
-}
-
-.dropdown a {
-  display: block;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  color: #1A1A1A;
-}
-
-.dropdown a:hover {
-  background-color: #f0f0f0;
-}
-
-.nav-item:hover .dropdown {
-  display: block;
-}
-
-.nav-container {
-  display: flex;
-  gap: 2rem;
-}
-
-.hero-image {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin-top: 0; /* Remove space above the image */
-}
-
-.hero-headline {
-  position: absolute;
-  top: 150px; /* Move the headline further down */
-  left: 40px; /* Shift headline to the left */
-  width: auto;
-  text-align: left; /* Align text to the left */
-  font-family: 'Proxima Nova', sans-serif;
-  color: #FFF7E1;
-  font-size: 2.5rem; /* Make the headline font bigger */
-  font-weight: 700;
-  text-shadow: 1px 1px 8px rgba(0,0,0,0.25); /* Make text readable on photo */
-  z-index: 10;
-  padding: 1rem 0;
-  box-sizing: border-box;
-}
-
-.hero-subheadline {
-  font-family: 'Proxima Nova', sans-serif;
-  color: #FFF7E1;
-  font-size: 1.2rem;
-  font-weight: 400;
-  margin-top: 1rem; /* Space between headline and subheadline */
-  text-shadow: 1px 1px 8px rgba(0,0,0,0.25); /* Make text readable on photo */
-}
-
-.cta-container {
-  display: block;
-  position: absolute;
-  left: 100px; /* Align with headline and subheadline */
-  top: 500px; /* Adjust this value to match the middle of the subheadline */
-  margin-top: 0;
-  margin-bottom: 2rem;
-  z-index: 11;
-}
-
-.cta-button {
-  background-color: #FFC907; /* Changed to charity: water yellow */
-  color: #1A1A1A; /* Dark text for contrast */
-  font-family: 'Proxima Nova', sans-serif;
-  font-size: 1.2rem;
-  font-weight: 700;
-  padding: 1rem 2.5rem;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  transition: background 0.2s;
-}
-
-.cta-button:hover {
-  background-color: #e6b800; /* Slightly darker yellow on hover */
-}
-
-/* Responsive styles for smaller screens */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem;
-  }
-  .nav-container {
-    flex-direction: column;
-    gap: 0.5rem;
-    width: 100%;
-  }
-  .nav-item {
-    margin: 0.5rem 0;
-  }
-}
-
-@media (max-width: 480px) {
-  .navbar {
-    padding: 0.5rem;
-  }
-  .nav-container {
-    gap: 0.25rem;
-  }
-  .nav-item span {
-    font-size: 1rem;
-  }
-}
+</body>
+</html>
