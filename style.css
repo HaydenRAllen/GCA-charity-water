@@ -130,7 +130,7 @@ Fonts:
   color: #FFF7E1;
   font-size: 1.2rem;
   font-weight: 400;
-  margin-top: 1.5rem; /* Space between headline and subheadline */
+  margin-top: 2rem; /* Space between headline and subheadline */
   text-shadow: 1px 1px 8px rgba(0,0,0,0.25); /* Make text readable on photo */
 }
 
@@ -173,7 +173,7 @@ Fonts:
 }
 
 .contact-link:hover {
-  color: #FFC907; /* charity: water blue on hover */
+  color: #FFC907; /* charity: water yellow on hover */
 }
 
 /* Responsive styles for smaller screens */
@@ -211,7 +211,7 @@ Fonts:
     font-size: 1rem !important;
     color: #333 !important;
     text-shadow: none !important;
-    margin-top: 0.5rem !important;
+    margin-top: 1rem !important;
   }
   .cta-container {
     margin: 1rem 0 2rem 0 !important;
