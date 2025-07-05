@@ -11,9 +11,8 @@
 <body>
   <header class="navbar">
     <!-- Add the logo to the left side of the navigation bar -->
-    <img src="img/cw_logo.png" alt="Charity: Water Logo" style="height: 48px;" class="navbar-logo">
+    <img src="img/cw_logo.png" alt="Charity: Water Logo" class="navbar-logo">
     <div class="nav-container">
-      <!-- The navigation items are inside nav-container, which is styled to be horizontal using flexbox in CSS -->
       <div class="nav-item">
         <span>Take Action <span class="arrow">▼</span></span>
         <div class="dropdown">
@@ -40,23 +39,16 @@
       </div>
     </div>
   </header>
-  <!-- Headline over the photo -->
-  <div class="hero-headline">
-    90% of the population has<br>
-    access to clean water.<br>
-    We're the generation<br>
-    that can reach 100%
-    <!-- Subheadline below the headline -->
-    <div class="hero-subheadline">
-      The path to clean water for everyone is nearly paved.
-    </div>
-  </div>
-  <!-- Add the main charity: water photo below the navigation bar -->
-  <img src="img/charitywaterphoto.png" alt="Charity: Water" class="hero-image">
-  <!-- Call to Action Button below the subheadline and above the bottom of the image -->
-  <div class="cta-container">
-    <button class="cta-button">Help Finish the Path</button>
-  </div>
 
+  <main>
+    <div class="hero-image-container" style="position:relative;">
+      <img src="img/charitywaterphoto.png" alt="Clean Water Project" class="hero-image">
+      <h1 class="hero-headline">Clean Water Changes Everything</h1>
+      <div class="hero-subheadline">Join us to bring clean, safe water to every person on the planet.</div>
+      <div class="cta-container">
+        <button class="cta-button">Donate Now</button>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
